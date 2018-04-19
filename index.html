@@ -1,18 +1,1542 @@
+<!DOCTYPE html>
+<html>
 <head>
+<title>akDirect | directory of guides and resources for Aura Kingdom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Directory of guides and resources for Aura Kingdom">
+<meta name="keywords" content="Aura, Kingdom, directory, guide, link">
+<meta name="author" content="Lylun">
+
 <style>
 body {
     background-color: #E9EEF2;
+	font-family: Verdana;
+	font-size: 12px;
 }
-
 h1 {
     color: #114263;
-    margin-left: 40px;
+    text-align: center;
+	font-family: Georgia;
+	font-size: 50px;
+	margin: 10px;
 } 
+h2 {
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Georgia;
+	font-size: 40px;
+	line-spacing: 15px;
+}
+h6 {
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 12px;
+	margin: 0px;
+}
+#main{
+    margin-right: 15%;
+	margin-top: -10px;
+    width: 80%;
+	background-color: #FFFFFF;
+    border: none;
+    padding: 10px;
+}
+					/* NAVIGATION */
+#sidebar {
+	overflow: hidden;
+	position: fixed;
+    right: 0;
+	width: 14%;
+	height: 100%;
+	background-color: #FFF;
+    border: none;
+    padding: 10px;
+}
+#sidebar a, #topbar a {
+	color: #000;
+	background-color: #FFF;
+    display: block;
+    text-align: left;
+    padding: 2px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 0px;
+    text-decoration: none;
+}
+#sidebar a:hover, #topbar a:hover {
+    background: #114263;
+    color: #FFF;
+}
+#topbar {
+	display: none;
+	position: fixed;
+    top: 0;
+	width: 95%;
+	border: none;
+    padding: 5px;
+	text-align: right;
+}
+.dropbtn {
+    background-color: #114263;
+	width: 100px;
+    color: #FFF;
+    padding: 10px;
+    border: 1px solid #FFF;
+	font-weight: bold;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropcolumn {
+	float: left;
+	margin-right: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+	right: 0;
+	left: auto;
+    background-color: #FFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	padding: 5px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+				/* LISTING BOXES */
+.headbox{
+	background-color: #114263;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 0px;
+}
+.subheadbox, .listingbox, .contactbox, .updatesbox {
+	background-color: #E9EEF2;
+	width: 47%;
+	height: 50px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 0px;
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	padding: 1%;
+}
+.subheadbox {
+	background-color: #FFF;
+	border: 1px solid #114263;
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+	width: 50%;
+	height: 30px;
+}
+.subheadbox p {
+	margin: 0px;
+	margin-top: 5px;
+}
+.listingbox p{
+	margin: 0px;
+}
+.listingbox a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #114263;
+	margin-left: 10px;
+}
+.listingbox a:hover, .contactbox a:hover, .updatesbox a:hover{
+	color: #1A6396;
+}
+.contactbox, .updatesbox {
+	height: 300px;
+	width: 46%;
+	background-color: #FFF;
+	border: 1px solid #114263;
+}
+.inupdatesbox{
+	height: 250px;
+	overflow-y: scroll;
+	margin: 10px;
+}
+.contactbox a, .updatesbox a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #114263;
+}
+.default {
+	font-style: normal;
+}
+.centerp {
+	text-align: center;
+	color:#114263;
+}
+@media screen and (max-width: 650px), (max-height: 695px) {
+    #main {
+        width: 97%;
+    }
+	#sidebar {
+		display: none;
+	}
+	#topbar {
+		display: block;
+	}
+}
+/*
+@media screen and (min-width: 1000px) {
+    #main {
+        width: 765px;
+		margin-left: 5px;
+    }
+}
+*/
 </style>
 </head>
-
-
-
 <body>
-<h1>hello!</h1>
+
+<div id="topbar">
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+  <div class="dropcolumn">
+  <a href="#achievements">Achievements</a>
+  <a href="#alchemy">Alchemy</a>
+  <a href="#archaeology">Archaeology</a>
+  <a href="#builds">Builds</a>
+  <a href="#cardduel">Card Duel</a>
+  <a href="#cooking">Cooking & Gathering</a>
+  <a href="#dictionaries">Dictionaries</a>
+  <a href="#dragonpoints">Dragon Points</a>
+  <a href="#economy">Economy</a>  
+  <a href="#eidolons">Eidolons</a>
+  <a href="#fishing">Fishing</a>
+  <a href="#gaiachronicle">Gaia Chronicle</a>
+  <a href="#cooking">Gathering</a>
+  <a href="#general">General</a>
+  <a href="#worldbosses">Goat</a>
+  <a href="#guardianknight">Guardian Knight</a>
+  <a href="#guildinstance">Guild Instance</a>
+  </div>
+  <div class="dropcolumn">
+    <a href="#holychest">Holy Chest</a>
+  <a href="#housing">Housing</a>
+  <a href="#lore">Lore</a>
+  <a href="#loyaltypoints">Loyalty Points</a>
+  <a href="#mirabelle">Mirabelle</a>
+  <a href="#paragon">Paragon Table</a>
+  <a href="#patches">Patches</a>
+  <a href="#pets">Pets</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#secretstones">Secret Stones</a>
+  <a href="#skytower">Sky Tower & Realm</a>
+  <a href="#technical">Technical</a>
+  <a href="#worldbosses">World Bosses</a>
+  <a href="#contactupdates" style="margin-top:10px;">Contact & Updates</a>
+  </div>
+  </div>
+</div>
+</div>
+
+<div id="sidebar">
+  <a href="#achievements">Achievements</a>
+  <a href="#alchemy">Alchemy</a>
+  <a href="#archaeology">Archaeology</a>
+  <a href="#builds">Builds</a>
+  <a href="#cardduel">Card Duel</a>
+  <a href="#cooking">Cooking & Gathering</a>
+  <a href="#dictionaries">Dictionaries</a>
+  <a href="#dragonpoints">Dragon Points</a>
+  <a href="#economy">Economy</a>  
+  <a href="#eidolons">Eidolons</a>
+  <a href="#fishing">Fishing</a>
+  <a href="#gaiachronicle">Gaia Chronicle</a>
+  <a href="#cooking">Gathering</a>
+  <a href="#general">General</a>
+  <a href="#worldbosses">Goat</a>
+  <a href="#guardianknight">Guardian Knight</a>
+  <a href="#guildinstance">Guild Instance</a>
+  <a href="#holychest">Holy Chest</a>
+  <a href="#housing">Housing</a>
+  <a href="#lore">Lore</a>
+  <a href="#loyaltypoints">Loyalty Points</a>
+  <a href="#mirabelle">Mirabelle</a>
+  <a href="#paragon">Paragon Table</a>
+  <a href="#patches">Patches</a>
+  <a href="#pets">Pets</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#secretstones">Secret Stones</a>
+  <a href="#skytower">Sky Tower & Realm</a>
+  <a href="#technical">Technical</a>
+  <a href="#worldbosses">World Bosses</a>
+  <a href="#contactupdates" style="margin-top:10px;">Contact & Updates</a>
+  </div>
+
+  
+  
+  
+  
+<div id="main">
+<h1>akDirect</h1>
+<p style="font-weight: bold; text-align: center;">A links directory for all Aura Kingdom guides and resources. </p>
+<p style="font-style: italic; text-align: center;"><span class="default">&#x2794;</span> [goo.gl placeholder] | [tinyurl placeholder] <span class="default">&#x2794;</span></p>
+
+
+
+<div class="headbox">
+<h2 id="achievements">Achievements</h2>
+</div>
+
+<div class="subheadbox">
+<p>General:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.aurakingdom-db.com/achievements">AK-DB's Achievement List</a></p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.aurakingdom-db.com/titles">AK-DB's Title List</a></p>
+<p>&#x2714; shows the stat gained from each title</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.lepei.me/achievement/adventurer-medal/">Le Pei's Medal Guide</a></p>
+<p></p>
+<p></p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://mmotea.wordpress.com/2013/12/18/aura-kingdom-achievement-guide/">MMOTea's Achievement Guide</a></p>
+<p>&#x2718; only up to Cactakara</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>Conversations:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.lepei.me/achievement/conversation/">Le Pei's Conversations Guide</a></p>
+<p>&#x2714; these are video guides</p>
+<p></p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?3383-Rainmist-Reach-and-Sludgemarke-Marsh-(Conversation)">Rainmist Reach & Emerald Marsh Conversations</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?4652-Conversations-Meteorite-Heights-amp-Silent-Ice-Hill">Starstruck Plateau & Silent Ice Field Conversations</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?7670-Morton-Port-amp-Coleus-Hills-Conversation">Port Morton & Candetonn Hill Conversations</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?8379-Greensea-Plains-amp-Wild-Wind-Valley-Conversation">Viridian Steppe & Desolate Valley Conversations</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?10178-Crystal-Lake-Waterfall-and-Whistling-Canyon-Conversation">Tanglevine Cascades & Sunhunter's Vale Conversations</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>Oddities:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.lepei.me/achievement/oddity/">Le Pei's Oddities Guide</a></p>
+<p>&#x2714; these are video guides</p>
+<p></p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?3409-Oddities-Rainmist-Reach-and-Sludgemarke-Marsh">Rainmist Reach & Emerald Marsh Oddities</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?4830-Oddities-Meteorite-Heights-and-Silent-Ice-Hill">Starstruck Plateau & Silent Ice Field Oddities</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?7783-Guide-Morton-Port-and-Coleus-Hills-Oddities">Port Morton & Candetonn Hill Oddities</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?8382-Greensea-Plains-and-Wild-Wind-Valley-ODDITIES">Viridian Steppe & Desolate Valley Oddities</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?12512-Enchanted-Valley-Oddities-Text-Version">Chronology Forest Oddities</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?12513-Ancient-Desert-Oddities-Text-version">Tempest Desert Oddities</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="alchemy">Alchemy</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.guildless.net/forum/thread-62-1-1.html">Potion Crafting</a></p>
+<p>&#x2714; table of amounts</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.guildless.net/forum/thread-63-1-1.html">Elixir Crafting</a></p>
+<p>&#x2714; table of amounts</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="archaeology">Archaeology</h2>
+</div>
+
+<div class="subheadbox">
+<p>General:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/151-archeology/">GM Rheigah's Archaeology Guide</a></p>
+<p>&#x2714; schedule and walkthrough</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/tUL0-Nn3Jx7e6uX3k4_yifQ/edit?pli=1#gid=1702858957">Catalyst's Achaeology Drops List</a></p>
+<p>&#x2714; schedule and quality identification</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.lepei.me/profession/archaeology-schedule/">Le Pei's Archaeo Dig Site Schedule</a></p>
+<p>&#x2714; schedule and quality identification</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1wYM56adot5FMs5DYO_iTffvugTimqcMDCFsdWsnFJPQ/edit#gid=0">iCornflakes's Archaeology Sheet</a></p>
+<p>&#x2714; schedule and quality identification</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>As a profession:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?5246-Production-Ranking-Requirements">Production Ranking Requirements</a></p>
+<p>&#x2714; requirements for leveling your professions</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>Hall of Philae:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?8244-Philae-Court-Archeology-Dungeon-Guide">Philae Court Archaeology Dungeon</a></p>
+<p>&#x2714; includes written and video walkthrough</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="builds">Builds</h2>
+</div>
+
+<div class="subheadbox">
+<p>General:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/184-guide-optimizing-pve-dps/">Optimizing PVE DPS</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/62-damage-in-detail-vs-critical-damage/">Damage % (in detail) vs Critical Damage</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/171-skill-damage-and-dot-mechanics/">Skill Damage & DOT Mechanics</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/170-comprehensive-stat-analysis-crit-vs-dmg-update-pending/">Comprehensive Stat Analysis: Crit vs. DMG</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/320-mob-player-damage/">Mob player damage</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/64-pve-and-pve-damage-damage-reduction-calculation/">PVE and PVE Damage/Damage Reduction Calculation</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/65-elemental-vs-dmg-chart/">Elemental & vs DMG & Chart</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/document/d/1D1hxRFtFTXOVxFwPIrll43fIUjPQM-tbJpaQt6YuT4A/edit?usp=sharing">DPS Basics</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/207-info-basics-of-elementals/">Basics of Elementals</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/205-not-holding-aggro-here-s-how-malice-works/">Here's How Malice Works</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/172-guide-the-dot-factor/">The DoT Factor</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.wikia.com/wiki/Thread:13253">Weapon Mastery Guide for Dummies</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>Class-specific:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?board/23-class-guides/">Class Guides</a></p>
+<p>&#x2714; simply the class guide subforum</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="cardduel">Card Duel</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?6800-Miniguide-How-to-Start-the-Card-Battle">How to Start the Card Battle</a></p>
+<p>&#x2714; beginner walkthrough</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/document/d/1cXu4aAHBRLaGGQed8_YDRvoimV7WPkgkCB2eo1Heylc/edit?usp=sharing">Joxaren's Card Duel Guide</a></p>
+<p>&#x2714; in-depth walkthrough</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1uPHlWnsT7M4CofMO2R_zvRbW4E0d3Utii_QqHnV9qsY/edit?usp=sharing">Card Locations</a></p>
+<p>&#x2714; detailed locations of every card</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/akcards</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1ewO43t6xnoPLk0GspTqkL6wMA0DP_U0ftlBKUjICeYM/edit?usp=sharing">XP to Monster Cards to Lvl60</a></p>
+<p>&#x2714; card fortification table</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="cooking">Cooking & Gathering</h2>
+</div>
+
+<div class="subheadbox">
+<p>General:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/157-guide-image-heavy-food-crafting-gather-locations/">Food Crafting + Gather Locations</a></p>
+<p>&#x2714; food/cooking walkthrough & gathering maps</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/foodgather</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1h1_UWf3u9Rnll7281Fb8mdVZQkqDMLeMGyb-HggQNkU/edit?pref=2&pli=1#gid=0">Food & Drinks</a></p>
+<p>&#x2714; required ingredients and buff stats</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/akfooddrink</p>
+</div>
+
+<div class="subheadbox">
+<p>Quests:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?7714-New-production-ranks-quests-Chef-and-Gatherer">Chef & Gather Quests</a></p>
+<p>&#x2714; quests walkthrough</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/13rWEn4L7sgdto-SKqokJDyQn1JMrlZW8DvPhAh8FQNc/edit?usp=sharing">Gathering Nut & Recipe Enthusiast</a></p>
+<p>&#x2714; quest list</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/gathercookquests</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1ioMJn_nZB57HKZCcvV5NgEJRcqzbr-kI92dmBT-5em0/edit#gid=1115742118">Navea Culinary/Collectors Dailies</a></p>
+<p>&#x2714; quest list</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/AKDailyNavea</p>
+</div>
+
+<div class="subheadbox">
+<p>As a profession:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?5246-Production-Ranking-Requirements">Production Ranking Requirements</a></p>
+<p>&#x2714; requirements for leveling your professions</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="dictionaries">Dictionaries</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://guidescroll.com/2014/02/aura-kingdom-acronyms-and-abbreviations/">Acronyms & Abbreviations</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?2896-Aura-Kingdom-Abbreviations">Abbreviations & Acronyms</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="dragonpoints">Dragon Points</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.wikia.com/wiki/Thread:24147">Simted's Dragon Points Guide</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="economy">Economy</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://guidescroll.com/2014/02/aura-kingdom-buying-and-selling-guide/">Auction House, COD & Stalls</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="eidolons">Eidolons</h2>
+</div>
+
+<div class="subheadbox">
+<p>Obtaining Eidolons:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1Vh6dxOPFdkXwvFL34W5XGrY1o5fNzSsKrZeXJpevVDg/edit?usp=sharing">Eidolon Locations</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/EidolonLocations</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1WfgqXsBWLovv5zHZu-mj7rHLfpqvhUOwGVFvfshunMo/edit?usp=sharing">Temple of Eidolons Spawn Rate</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>Wish / Prayer:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.aurakingdom-db.com/charts/eidolon-wishes">AK-DB's Eidolon Wishes</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/tUL0-Nn3Jx7e6uX3k4_yifQ/edit?pli=1#gid=445792429">Eidolon Wishes</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1qk7b_UDGmdZ7LlQXngySJaUM2BGKKoaNAk9yZXGeoBY/edit?pli=1#gid=0">Eidolon Prayer with Dialogue</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1B7tRvdvdrPj6WsbCkXwtENMLafQB09ELzIXzJPGTUp8/edit?pli=1#gid=0">Eidolon Prayer Items</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="fishing">Fishing</h2>
+</div>
+
+<div class="subheadbox">
+<p>Schedules:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://guildless.net/fishtimer/">Fish Timer</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://guildless.net/forum/thread-55-1-1.html">Fish King Spawn Time Table</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/18dFtG1Y1toP9dMbmcLXW6wS0KUJiK80b0keGEBQMXck/edit?usp=sharing">Fish King Schedule</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>How To:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://guidescroll.com/2015/05/aura-kingdom-fish-king-guide/">Fish King Guide</a></p>
+<p>&#x2714; in-depth walkthrough</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/18dFtG1Y1toP9dMbmcLXW6wS0KUJiK80b0keGEBQMXck/edit?usp=sharing">Top Fishing Sets</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/67-guide-how-to-get-the-shark-fish-king-mount/">How To Get The Shark Mount</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=881970135">Reliable Gold Farming</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>As a profession:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?5246-Production-Ranking-Requirements">Production Ranking Requirements</a></p>
+<p>&#x2714; requirements for leveling your professions</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="gaiachronicle">Gaia Chronicle</h2>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p>none yet :(</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="general">General Help</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1enTjJsaf34Zp4-9Pcgv_8tgq5sRLBCTLijhtWKnAbTc/edit#gid=1904361879">Beginner's Guide to AK</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/AKbeginner </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.aurakingdom-db.com/">Aura Kingdom DB</a></p>
+<p>&#x2714; item database & references</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.lepei.me/">AuraKingdom.Lepei</a></p>
+<p>&#x2714; various guides</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.wikia.com/wiki/Aura_Kingdom_Wiki">Aura Kingdom Wiki</a></p>
+<p>&#x2714; wiki</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.portskandia.com/">Port Skandia</a></p>
+<p>&#x2714; item database, &#x2718; some outdated</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/links4lazy</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/11vOnZ7vTmXQRySp4p0G_AbfnnxMztGp04oiwJGAUf54/edit#gid=0">Links for Lazy</a></p>
+<p>&#x2714; directory</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="guardianknight">Guardian Knight</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/1549-guide-guardian-knight-system/">Guardian Knight System</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?7683-Guardian-Knight-System-Translated">Guardian Knight System</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/69-wedding/">Wedding Picture Guide</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="guildinstance">Guild Instance</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/document/d/1kMu_K3MUa7QZT64tV-R-E6BD-Sj5sWVrUSBcfxJx6ik/edit?usp=sharing">Guild Instance Walkthrough</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/guildinstance</p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="holychest">Holy Chest</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/document/d/1spSnykFpXCSlCKjk-ehi_zTzRtFOrPZBl21sKqjllcA/edit?usp=sharing">AK Holy Chest Guide</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/akHolyChest</p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="housing">Housing</h2>
+</div>
+
+<div class="listingbox">
+<p>none yet :(</p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="lore">Lore</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://forum.aurakingdom.to/showthread.php?5492-Game-Eidolon-and-Sky-Tower-Lore">Game, Eidolon & ST Lore (discussion)</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="loyaltypoints">Loyalty Points</h2>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1DIq230TEhFVOcNcfG7U2ypM8H3GjSUn5qmNUJ5Fwqt4/edit?usp=sharing">Daily Achievements</a></p>
+<p>&#x2714; daily achievements that reward LP</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/DailyAchieves</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1JEP7rTxOvRdls7ZtmdoqOe4ct6AY6FZLRZ6dVkspbEM/edit#gid=0">Daily Loyalty Points</a></p>
+<p>&#x2714; daily achievements that reward LP</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="mirabelle">Mirabelle</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/173-fame-board-quest-schedule/">Mirabelle Fame/Board Quest Schedule</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/158-how-to-mirabelle-for-lv60-players/">Mirabelle Lvl60+</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="paragon">Paragon Table</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/70-aura-kingdom-guide-paragon-table/">Paragon Table Guide</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="patches">Patches</h2>
+</div>
+
+<div class="subheadbox">
+<p>AKUS Patch Notes:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/1562-patch-notes-41/">April 2018</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/623-patch-notes-40/">March 2018</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/480-patch-notes-39/">February 2018</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/316-patch-notes-2017/">2017 (all)</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/315-patch-notes-2016/">2016 (all)</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/314-patch-notes-2015/">2015 (all)</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/313-patch-notes-2014/">2014 (all)</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>Upcoming Content:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/204-ak-unreleased-content-update-info-centre/">Unreleased Content Update Info Centre</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/149-ak-future-costume-thread-from-twak/">Future Costume Thread</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="pets">Pets</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/66-guide-gold-pet-refining-system/">Gold Pet Refining System</a></p>
+<p>&#x2714; walkthrough</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1Ujanyvairr24mGyfRFW_q6dOyyNAfPHsbguVODmRD9M/edit?usp=sharing">AK Collection: Pets</a></p>
+<p>&#x2714; empty sheet for detailing collection</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/164-guide-lucianne-s-guide-to-hunting-mushrooms/">Luce's Mushroom Hunting Guide</a></p>
+<p>&#x2714; finding the Yellow Mushroom transformer</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="quiz">Quiz</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/tUL0-Nn3Jx7e6uX3k4_yifQ/edit?pli=1#gid=1400504249">Quiz Answers</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.guildless.net/forum/thread-20-1-1.html">AK Quiz Cheat Sheet</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=321897125&insideModal=1">AK Quiz True Answers</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="secretstones">Secret Stones</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://guidescroll.com/2014/01/aura-kingdom-secret-stone-guide/">Secret Stone Guide</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://www.youtube.com/watch?v=nBUMCSJ8-S8">Secret Stones Tutorial</a></p>
+<p>&#x2714; video</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="skytower">Sky Tower & Realm</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/68-raid-timing/">Raid Timing</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/174-sky-tower-guide-%E2%80%94-floors-1-30/">Sky Tower Floors 1-30</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/document/d/1Mj3sXf8TZMdjkK--YK7QrqVYaQFEhHU1Aybm5zCjBto/edit?usp=sharing">Immortals's ST Instructions 1-20</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/document/d/1kGg8YEvikk_AkYQMVhzKewnY9JNfFkXjzz4zZvKUYZo/edit#">ST Floors 36-40</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="technical">Technical</h2>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/115-aura-kingdom-faq/">Aura Kingdom FAQ (Troubleshooting)</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/152-guide-how-to-fix-the-chat-box-reset-problem/">How To Fix Chat Box Reset</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox">
+<h2 id="worldbosses">World Bosses</h2>
+</div>
+
+<div class="subheadbox">
+<p>Timers:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.aurakingdom-db.com/timers">AK-DB's Timers</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href="http://www.portskandia.com/timers">Port Skandia's Timers</a></p>
+<p>&#x2718; some outdated</p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="subheadbox">
+<p>Goat:</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1MrMwNerILxNK0lvKCBklkYZx_OKAb4io8XdaldRyO_g/edit#gid=187422759">Asy's Angels World Boss Team</a></p>
+<p>&#x2714; times sheet for Phoenix</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/Angels-WB</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/tUL0-Nn3Jx7e6uX3k4_yifQ/edit">Catalyst's World Boss Timers</a></p>
+<p>&#x2714; times sheet for Chimera</p>
+<p style="font-style: italic;"><span class="default">&#x2794;</span> tinyurl.com/catalyst-ak</p>
+</div>
+
+<div class="listingbox">
+<p><a href="https://docs.google.com/spreadsheets/d/1cJ1dxi8cYqUbaKra0JGbAVtdXL_8VWAA2j60himngW0/edit?usp=sharing">Battlefield Merit Chest Loot Rate</a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+<div class="headbox" style="margin-top: 100px;">
+<h2 id="contactupdates">Contact & Updates</h2>
+</div>
+
+<div class="contactbox">
+<p style="font-weight: bold; text-align: center">Contact</p>
+<p>Please feel free to contact me if you know of a guide that I'm missing, if you have a short url for an existing listing, or with any questions or corrections. :3</p>
+<p>You can reach me either by: </p>
+<ol>
+<li><a href="http://aurakingdom.aeriagames.com/forum/wcf/index.php?conversation-add/&userID=202">PM me</a> on the AKUS forum
+<li>mail me in-game (ign: Lylun, server: Phoenix)
+</ol>
+</div>
+
+<div class="updatesbox">
+<p style="font-weight: bold; text-align: center">Updates</p>
+<div class="inupdatesbox">
+<h6>18th April 2018</h6>
+<p>Patch notes!</p>
+<p><a href="http://aurakingdom.aeriagames.com/forum/index.php?thread/1562-patch-notes-41/">April 2018</a></p>
+<h6>17th April 2018</h6>
+<p>Added new guides:</p>
+<p>Guide Guardian Knight System</p>
+<p>Wedding Picture Guide</p>
+<h6>16th April 2018</h6>
+<p>Merged 'Beginners' section into 'General Help' and 'Dictionaries'. </p>
+<p>I'm working on a big change which will make akDirectory much easier to use and to update. I hope to have it done soon, can't wait to share it with you. :)</p>
+<h6>27th March 2018</h6>
+<p>Renamed category 'Class / Character Building' to 'Builds'. </p>
+<p>Added new links:</p>
+<p>Weapon Mastery Guide for Dummies</p>
+<p>Elemental % vs DMG % Chart</p>
+<p>Secret Stones Tutorial (video)</p>
+<p>And done! I have found or replaced all the guides that were linking to the old forums. </p>
+<p>In 'Builds' I've linked to the Class Guides subforum instead of linking each thread, for expediency. I might link them individually in the future. </p>
+<p>The only guide I haven't found a replacement for is a guide to Gaia Chronicle and which pets can be found where in that. If you know of a guide for this please let me know, thanks!</p>
+<h6>24th March 2018</h6>
+<p>Since the AKUS forums have moved, the links for guides there are broken. </p>
+<p>Some of the guides are lost, some have been reposted on the new forums.</p>
+<p>I'm working on fixing/replacing these links. In the mean time they are marked with an asterisk*. </p>
+<p>Thanks for your patience~</p>
+<p>New links added in addition to fixing old ones:</p>
+<p>Paragon Table Guide</p>
+<p>Gold Pet Refining System</p>
+<p>Basics of Elementals</p>
+<p>Here's How Malice Works</p>
+<p>The DoT Factor</p>
+<p>Hunting Mushrooms</p>
+<h6>14th March 2018</h6>
+<p>Added patch notes, sorry for the delay:</p>
+<p>March 2018</p>
+<h6>31st January 2018</h6>
+<p>Added patch notes:</p>
+<p>January 2018</p>
+<h6>29th November 2017</h6>
+<p>Added patch notes link: </p>
+<p>November 2017</p>
+<h6>25th October 2017</h6>
+<p>Added patch notes link:</p>
+<p>October 2017</p>
+<h6>15th September 2017</h6>
+<p>New link added:</p>
+<p>ST Floors 36-40</p>
+<p>And the latest patch notes:</p>
+<p>September 2017</p>
+<h6>11th September 2017</h6>
+<p>New link added:</p>
+<p>Fish King Schedule & Set Trees</p>
+<h6>21st August 2017</h6>
+<p>New link added: </p>
+<p>Eidolon Locations</p>
+<p>Compiled this myself, hope you find it useful~</p>
+<h6>14th August 2017</h6>
+<p>New link added:</p>
+<p>AK Collection: Pets</p>
+<h6>2nd August 2017</h6>
+<p>Patch Notes: </p>
+<p>August 2017</p>
+<h6>19th July 2017</h6>
+<p>New links added: </p>
+<p>Joxaren's Card Duel Guide</p>
+<p>DPS Basics</p>
+<p>Immortals' ST Instructions 1-20</p>
+<h6>21st June 2017</h6>
+<p>Added latest patch notes link:</p>
+<p>June 2017</p>
+<h6>4th June 2017</h6>
+<p>Moved the contents of Other Help Sites category to General Help category. </p>
+<p>Added Lepei and AK-DB links to Achievements category. </p>
+<p>Began adding italicised notes on the useful features of a link when there are many to choose from. </p>
+<h6>1st June 2017</h6>
+<p>New link added: </p>
+<p>AK-DB's Eidolon Wishes</p>
+<h6>31st May 2017</h6>
+<p>Added a guide to making gold through fishing: </p>
+<p>Reliable Gold Farming</p>
+<h6>26th May 2017</h6>
+<p>Added Sylvia, Alger, Yvette and Adunis to the World Bosses section. </p>
+<p>Added AK-DB's Timers page to the World Bosses section. </p>
+<p>AK-DB's Timers</p>
+<h6>24th May 2017</h6>
+<p>New link: </p>
+<p>Aura Kingdom Wiki</p>
+<h6>11th May 2017</h6>
+<p>New links:</p>
+<p>AK Fish Timer</p>
+<p>Fish King Spawn Time Table</p>
+<h6>10th May 2017</h6>
+<p>Added link to the latest Patch Notes:</p>
+<p>Patch Notes May 2017</p>
+<h6>8th May 2017</h6>
+<p>New guide:</p>
+<p>Navea Culinary/Collectors Dailies</p>
+<h6>28th April 2017</h6>
+<p>Added the 'outdated' note to portskandia.com, as it hasn't been updated in over a year. Thanks to Skatch for pointing this out to me. :)</p>
+<p>Added the Achievements section. </p>
+<p>AK Achievement Guide</p>
+<h6>24th April 2017</h6>
+<p>Changed the class guide links to include the creator's name and the title they gave it, for easier reference. </p>
+<h6>11th April 2017</h6>
+<p>Finished the bulk of construction and guide adding. Started putting the link out for people to use. </p>
+<h6>1st April 2017</h6>
+<p>Started work. </p>
+</div>
+
+</div>
+
+
+
+<p style="clear: both; height: 75px;"></p>
+
+
+
+
+
+
+
+
+
+<!-- last template --><div style="display: none;">
+
+<div class="headbox">
+<h2 id=""></h2>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+<div class="listingbox">
+<p><a href=""></a></p>
+<p></p>
+<p style="font-style: italic;"><span class="default"></span> </p>
+</div>
+
+
+
+<p style="clear: both;"></p>
+
+
+
+</div>
+</div>
+
+
+
+
 </body>
+</html>
